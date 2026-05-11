@@ -1,0 +1,39 @@
+{
+  "name": "auto-tintura",
+  "version": "0.0.3",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch"
+  },
+  "description": "一个智能图片背景色分析组件库，为图片自动生成协调的背景色，支持多边缘模式和纯色模式。",
+  "keywords": [
+    "image",
+    "background",
+    "color",
+    "analysis",
+    "tintura",
+    "palette",
+    "ui"
+  ],
+  "author": "fukaidong",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "vite": "^5.4.2",
+    "vite-plugin-dts": "^3.9.1"
+  }
+}
